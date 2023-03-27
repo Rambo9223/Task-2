@@ -4,9 +4,13 @@ const output_Is = "is my favouite veichle"; // the output statement for my favou
 const output_Is_Not = "is not my favourite veichle"; // the output statement for the data array that are not my favourite veichles 
 const the = "The";  
 
+let start = confirm(`Would you like to know my favourite veichle?`);
+//added confirm for user interactivity
+if(start === true){
 for(let i = 0; i < cars.length; i++){
     // if else statement written in shorthand
     (favourite === cars[i])? 
         console.log(`${the} ${cars[i]} ${output_Is}`):console.log(`${the} ${cars[i]} ${output_Is_Not}`)
     }
+}else{alert("Ok! Have a nice day");}
 
